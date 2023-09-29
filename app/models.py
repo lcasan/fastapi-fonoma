@@ -32,7 +32,7 @@ class Order(BaseModel):
     )
 
 
-class Json(BaseModel):
+class MSG(BaseModel):
     orders: list[Order] = Field(
         ...,
         description = "List of orders"

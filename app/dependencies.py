@@ -1,11 +1,10 @@
 from models import Order, Criterion
 
-def process_orders(orders: list[Order], criterion: Criterion):
-    
-    '''
-        This function filter the orders based on the criterion 
-        and return the total revenue for the filtered orders.
-    '''
+def process_orders(orders: list[Order], criterion: Criterion) -> float:
+    """
+    This function filter the orders based on the criterion 
+    and return the total revenue for the filtered orders.
+    """
 
     total = 0.0
 
