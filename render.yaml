@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: webdis
+    runtime: docker
+    rootDir: webdis
+    dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
+    numInstances: 1 # optional (defaults to 1)
+    healthCheckPath: /
+    envVars:
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: lightning
+          property: host # available properties are listed below

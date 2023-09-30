@@ -56,7 +56,3 @@ def test_solution_all():
     response = client.post("/solution", json=test_data)
     assert response.status_code == 200
     assert response.json() == 65.0
-
-    '''
-        
-    '''
