@@ -12,7 +12,7 @@ app = FastAPI()
 @app.post("/solution")
 def solution(msg: MSG) -> float:
     """
-    The endpoint return the result of executing the function process_orders with the parameters
+    The endpoint return the result of executing the function process_orders() with the parameters obtained 
 
     Parameters:
     - msg: A ModelBase containing the orders and the criterion.
